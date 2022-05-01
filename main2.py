@@ -23,5 +23,6 @@ def initialize_voxels():
         scene.set_voxel(vec3(j - 50, 50, i - 50), 1, vec3(bgr[2] / 255, bgr[1] / 255, bgr[0] / 255))   # 上
 
 
-initialize_voxels()
-scene.finish()
+if __name__ == "__main__":
+    initialize_voxels()
+    scene.finish()
